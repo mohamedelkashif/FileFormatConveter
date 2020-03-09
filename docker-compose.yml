@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+  trivagoconverter:
+    build: .
+    restart: always
+    container_name: trivagoconverter
+    working_dir: /go/src/trivago-BackendSoftwareEngineer-UserFlow
+    volumes:
+      - ./output:/go/src/trivago-BackendSoftwareEngineer-UserFlow/output
